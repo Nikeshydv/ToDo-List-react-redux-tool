@@ -1,0 +1,33 @@
+
+{"student":[
+    {
+        "Rollno":121,
+        "Name":"Nikesh",
+        "City":"Bhopal",
+        "Fees":45789
+    },
+    {
+        "Rollno":122,
+        "Name":"Yashi",
+        "City":"bhopal",
+        "Fees":45789
+    },
+    {
+        "Rollno":123,
+        "Name":"viaks",
+        "City":"rewa",
+        "Fees":45785
+    },
+    {
+        "Rollno":124,
+        "Name":"sourab",
+        "City":"gwalior",
+        "Fees":40000
+    },
+    {
+        "Rollno":125,
+        "Name":"Sakshi",
+        "City":"Bhopal",
+        "Fees":78959
+    }
+]}

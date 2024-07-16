@@ -1,8 +1,9 @@
-import { Container, Nav, Navbar } from "react-bootstrap";
+import { Container, Nav, Navbar, } from "react-bootstrap"
 import { Link, Outlet } from "react-router-dom"
-import Form from 'react-bootstrap/Form';
-import Button from 'react-bootstrap/Button';
-import Dropdown from 'react-bootstrap/Dropdown';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
+
 
 
 
@@ -11,48 +12,35 @@ import Dropdown from 'react-bootstrap/Dropdown';
 const Layout=()=>{
     return(
         <>
-        <Navbar bg="dark" data-bs-theme="dark">
-            <Container>
+
+      
+<Navbar bg="dark" data-bs-theme="dark" className="p-3  ">
+        <Container>
+          <Navbar.Brand><Link id="home" to="home"><h1>SUPERBAG</h1></Link></Navbar.Brand>
+          <Nav className="me-auto text-decoration-none text-white" id="Nav">
+          <Link class="nav" to="home">Home</Link>
+                <Link class="nav" to="experience">About</Link>
+                <Link class="nav" to="project">Product</Link>
+                <Link class="nav" to="Contact">Contact</Link>
+          </Nav>
+          <input id="input" className="p-1 rounded-2" type="search" placeholder="TypeQuery" />
+          <div  id="search">Search</div>
+        </Container>
+      </Navbar>
+
+           
+            
+      <Row>
+        <Col>
+         <Outlet/></Col>
+      </Row>
+   
+
         
-         <Link className="fs-3 text-white p-2 text-decoration-none" to="home">Home</Link>
-<Link className="fs-3 text-white my-auto p-2  text-decoration-none " to="about">About</Link>
-<Link className="fs-3 text-white my-auto p-2  text-decoration-none" to="service">Service</Link>
-<Link className="fs-3 text-white my-auto p-2  text-decoration-none" to="contact">Contact</Link>
-<Form className="d-flex">
-  <div>
-<Dropdown  >
-      <Dropdown.Toggle variant="success" id="dropdown-basic">
-        Dropdown Button
-      </Dropdown.Toggle>
-
-      <Dropdown.Menu>
-        <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-        <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-        <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-      </Dropdown.Menu>
-    </Dropdown>
-    </div>
-            <Form.Control
-              type="search"
-              placeholder="Search"
-              className="me-2"
-              aria-label="Search"
-            />
-            <Button variant="outline-success">Search</Button>
-          </Form>
-
-
-
-
-          </Container>
-</Navbar>
-<Outlet/>
-<hr size="4" color="info"/>
-www.company.com-2024 
         </>
     )
 }
 
-export default Layout;
 
+export default Layout;
 
