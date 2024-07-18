@@ -1,33 +1,58 @@
-
-{"student":[
+{
+  "employee": [
     {
-        "Rollno":121,
-        "Name":"Nikesh",
-        "City":"Bhopal",
-        "Fees":45789
+      "Empid": 101,
+      "Empname": "Raj",
+      "Designation": "Manger",
+      "Departmet": "HR",
+      "Salary": 50000,
+      "id": "90dd"
     },
     {
-        "Rollno":122,
-        "Name":"Yashi",
-        "City":"bhopal",
-        "Fees":45789
+      "Empid": 102,
+      "Empname": "Nikesh",
+      "Designation": "Manger",
+      "Departmet": "HR",
+      "Salary": 50000,
+      "id": "51bc"
     },
     {
-        "Rollno":123,
-        "Name":"viaks",
-        "City":"rewa",
-        "Fees":45785
+      "Empid": 103,
+      "Empname": "Abishek",
+      "Designation": "Manger",
+      "Departmet": "HR",
+      "Salary": 50000,
+      "id": "b37a"
     },
     {
-        "Rollno":124,
-        "Name":"sourab",
-        "City":"gwalior",
-        "Fees":40000
+      "Empid": 104,
+      "Empname": "Vivek",
+      "Designation": "Manger",
+      "Departmet": "HR",
+      "Salary": 50000,
+      "id": "64c0"
     },
     {
-        "Rollno":125,
-        "Name":"Sakshi",
-        "City":"Bhopal",
-        "Fees":78959
+      "Empid": 105,
+      "Empname": "Priyam",
+      "Designation": "Manger",
+      "Departmet": "HR",
+      "Salary": 50000,
+      "id": "4685"
+    },
+    {
+      "id": "60ed",
+      "name": "Nikesh yadav",
+      "rollno": "1030203867411",
+      "city": "Hoshangabad",
+      "fees": "4878545"
+    },
+    {
+      "id": "fd2d",
+      "name": "MUKESH YADAV",
+      "rollno": "3001230687832",
+      "city": " iscjsakcn",
+      "fees": "45789"
     }
-]}
+  ]
+}

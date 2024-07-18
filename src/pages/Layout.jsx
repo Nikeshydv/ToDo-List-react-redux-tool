@@ -1,46 +1,26 @@
-import { Container, Nav, Navbar, } from "react-bootstrap"
 import { Link, Outlet } from "react-router-dom"
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-
-
-
-
-
 
 
 const Layout=()=>{
     return(
         <>
 
-      
-<Navbar bg="dark" data-bs-theme="dark" className="p-3  ">
-        <Container>
-          <Navbar.Brand><Link id="home" to="home"><h1>SUPERBAG</h1></Link></Navbar.Brand>
-          <Nav className="me-auto text-decoration-none text-white" id="Nav">
-          <Link class="nav" to="home">Home</Link>
-                <Link class="nav" to="experience">About</Link>
-                <Link class="nav" to="project">Product</Link>
-                <Link class="nav" to="Contact">Contact</Link>
-          </Nav>
-          <input id="input" className="p-1 rounded-2" type="search" placeholder="TypeQuery" />
-          <div  id="search">Search</div>
-        </Container>
-      </Navbar>
 
-           
-            
-      <Row>
-        <Col>
-         <Outlet/></Col>
-      </Row>
-   
+<Link style={{fontSize:"25px",color:"black",gap:"10px",textDecoration:"none",fontWeight:"bolder"}} to="home">Home</Link>
+<Link style={{fontSize:"25px",color:"black",padding:"10px",textDecoration:"none",fontWeight:"bolder"}} to="about">About</Link>
+<Link style={{fontSize:"25px",color:"black",padding:"10px",textDecoration:"none",fontWeight:"bolder"}} to="faculty">Faculty</Link>
+<Link style={{fontSize:"25px",color:"black",padding:"10px",textDecoration:"none",fontWeight:"bolder"}} to="ourcourse">Ourcourse</Link>
+<Link style={{fontSize:"25px",color:"black",padding:"10px",textDecoration:"none",fontWeight:"bolder"}} to="contact">Contact</Link>
+<Link style={{fontSize:"25px",color:"black",padding:"10px",textDecoration:"none",fontWeight:"bolder"}} to="display">Display</Link>
+<Link style={{fontSize:"25px",color:"black",padding:"10px",textDecoration:"none",fontWeight:"bolder"}} to="counter">Counter</Link>
+<Link style={{fontSize:"25px",color:"black",padding:"10px",textDecoration:"none",fontWeight:"bolder"}} to="insert">Insert</Link>
+<br/>
 
-        
+<Outlet/>
+
+
         </>
     )
 }
 
-
-export default Layout;
-
+export default  Layout;
