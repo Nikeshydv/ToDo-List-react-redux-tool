@@ -1,9 +1,9 @@
-// const Bhopal=()=>{
-//     return(
-//         <>
-//         welcome to cybrom bhopal
-//         </>
-//     )
-// }
+const Bhopal=()=>{
+    return(
+        <>
+        welcome to cybrom bhopal
+        </>
+    )
+}
 
-// export default Bhopal;
+export default Bhopal;

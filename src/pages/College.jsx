@@ -1,21 +1,21 @@
-// import Bhopal from "./Bhopal";
-// import Cybrom from "./Cybrom";
+import Bhopal from "./Bhopal";
+import Cybrom from "./Cybrom";
 
-// const College=(props)=>{
-// if(props.val){
-//     return <Cybrom/>;
-// }
-// else{
-//     return <Bhopal/>
-// }
+const College=(props)=>{
+if(props.val){
+    return <Cybrom/>;
+}
+else{
+    return <Bhopal/>
+}
 
 
-//     return(
-//         <>
-//     <Cybrom/>
-//     <Bhopal/>
-//         </>
-//     )
-// }
+    return(
+        <>
+    <Cybrom/>
+    <Bhopal/>
+        </>
+    )
+}
 
-// export default College;
+export default College;
