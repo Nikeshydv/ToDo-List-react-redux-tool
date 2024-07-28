@@ -1,28 +1,28 @@
-import { createContext, useState } from "react";
+// import { createContext, useState } from "react";
 
-const MyloginContext=createContext();
+// const MyloginContext=createContext();
 
-const LoginContext=({children})=>{
+// const LoginContext=({children})=>{
 
-const [user,setUser]=useState({name:"",auth:false})
+// const [user,setUser]=useState({name:"",auth:false})
 
-const login=(nm)=>{
-    setUser({name:nm,auth:true})
-}
-const logout=()=>{
-    setUser({name:"",auth:false})
-}
+// const login=(nm)=>{
+//     setUser({name:nm,auth:true})
+// }
+// const logout=()=>{
+//     setUser({name:"",auth:false})
+// }
 
-    return(
-        <>
+//     return(
+//         <>
 
-        <MyloginContext.Provider value={{user,login,logout}}>
-            {children}
-        </MyloginContext.Provider>
+//         <MyloginContext.Provider value={{user,login,logout}}>
+//             {children}
+//         </MyloginContext.Provider>
 
-        </>
-    )
-}
+//         </>
+//     )
+// }
 
-export default LoginContext;
- export {MyloginContext}
+// export default LoginContext;
+//  export {MyloginContext}

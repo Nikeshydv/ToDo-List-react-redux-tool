@@ -1,20 +1,20 @@
 
 
-import { useContext } from "react";
+// import { useContext } from "react";
 
-import { MyloginContext } from "./LoginContext";
+// import { MyloginContext } from "./LoginContext";
 
-const AuthUser=()=>{
-const[user,logout]=useContext(MyloginContext);
+// const AuthUser=()=>{
+// const[user,logout]=useContext(MyloginContext);
 
-    return(
-        <>
-<h1> welcome : {user.name}</h1>
+//     return(
+//         <>
+// <h1> welcome : {user.name}</h1>
 
-<button onClick={()=>{logout()}}>Logout</button>
+// <button onClick={()=>{logout()}}>Logout</button>
 
-        </>
-    )
-}
+//         </>
+//     )
+// }
 
-export default AuthUser;
+// export default AuthUser;
