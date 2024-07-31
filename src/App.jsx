@@ -1,20 +1,50 @@
-import { useDispatch, useSelector } from "react-redux";
-import { changeColor } from "../ColorSlice";
 import { useState } from "react";
-
+import { useSelector,useDispatch } from"react-redux";
+import { addTask } from "../todoSlice";
 
 const App=()=>{
-    const myclr=useSelector((State)=>State.mycolor.bgcolor);
-    const mydis=useDispatch();
-    const[clr,setClr]=useState("");
 
+    const [val,setVal]=useState("");
+    const mytask=useSelector((state)=>state.todolist.task);
+    const mydis=useDispatch();
+
+    const taskAdd=()=>{
+        mydis(addTask({id:Date.now(),task:val}));
+    }
+
+    let sno=0;
+    const ans=mytask.map((key)=>{
+        sno++
+    
+      return(
+        <>
+        <tr>
+            <td>{sno}</td>
+            <td>{key.task}</td>
+        </tr>
+        </>
+      )    
+    })
     return(
         <>
-<h1> REXUS TOOLKIT</h1>        
-Enter your color: <input type="text" value={clr} onChange={(e)=>{setClr(e.target.value)}}/>
-<button onClick={()=>{mydis(changeColor(clr))}}>Change color</button>
-<div style={{width:"500px",height:"300px",backgroundColor:myclr}}></div>
+        <h1> to do app</h1>
+        Enter task:
+        <input type="text" value={val} onChange={(e)=>{setVal(e.target.value)}}/>
+        <button onClick={taskAdd}>Add</button>
+        <table>
+            <tr>
+                <th>sno</th>
+                <th>Task</th>
+            </tr>
+            {ans}
+        </table>
         </>
     )
+
+
+  
+
+
 }
+
 export default App;
